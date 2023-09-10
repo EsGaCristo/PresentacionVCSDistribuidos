@@ -1,0 +1,98 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body{
+    background: #081038;
+}
+
+.introduccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.intr_izq{
+    padding: 10px;
+    width: 50%;
+    margin: 10px ;
+    margin-left: 20px;
+}
+.intr_der{
+    width: 50%;
+}
+.intr_der img{
+    width: 90%; height: 90%;
+}
+
+.introduccion h1{
+    color: aliceblue;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.introduccion p{
+    text-align: justify;
+    color: aliceblue;
+    font-size: 30px;
+}
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    color: aliceblue;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+/* Estilo para los submenús */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #081038;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Estilo para el enlace que muestra el submenú en hover */
+.navbar ul li:hover .submenu {
+    display: block;
+}
+
+/* Estilo para los elementos de los submenús */
+.submenu li {
+    display: block;
+    margin: 0;
+}
