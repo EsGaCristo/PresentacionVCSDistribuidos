@@ -21,11 +21,9 @@ body{
     margin: 10px ;
     margin-left: 20px;
 }
-.intr_der{
-    width: 50%;
-}
+
 .intr_der img{
-    width: 90%; height: 90%;
+    width: 90%; height: 40%;
 }
 
 .introduccion h1{
@@ -38,6 +36,43 @@ body{
     color: aliceblue;
     font-size: 30px;
 }
+/**Fin de la introduccion**/
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contenedor > div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+}
+
+.contenedor img{
+    width: 60%; height: 60%;
+}
+
+.contenedor h1{
+    color: aliceblue;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.contenedor h2{
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contenedor p,ul{
+    text-align: justify;
+    color: aliceblue;
+    font-size: 30px;
+}
+/** Div contenedor**/
 .navbar {
     width: 80%;
     margin: auto;
